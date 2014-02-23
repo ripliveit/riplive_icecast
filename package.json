@@ -1,0 +1,23 @@
+{
+  "name": "Shoutcast",
+  "version": "0.0.0",
+  "description": "Retrieve current song from a shoutcast server, broadcasting with engine.io to all connected client.",
+  "main": "app.js",
+  "dependencies": {
+    "radio-stream": "~0.0.1",
+    "broadway": "~0.2.9",
+    "engine.io": "~0.9.0",
+    "request": "~2.33.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "shoutcast",
+    "onair",
+    "real time"
+  ],
+  "author": "Gabriele D'Arrigo - @acirdesign",
+  "license": "ISC"
+}
