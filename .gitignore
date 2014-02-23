@@ -4,6 +4,7 @@ public
 *.sass-cache
 *.sln
 *.njsproj
+logs/*.log
 app/bower_components
 heroku
 /views
