@@ -35,6 +35,8 @@ app.use(require(__dirname + '/lib/radio.js'), {
     parser: app.getParser()
 });
 
+app.setMaxListeners(0);
+
 app.init(function(err) {
     if (err) {
         console.log(err);
