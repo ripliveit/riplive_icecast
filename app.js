@@ -1,5 +1,5 @@
 var http = require('http');
-var Iconv  = require('iconv').Iconv;
+var Iconv = require('iconv').Iconv;
 var engine = require('engine.io');
 var radio = require('radio-stream');
 var broadway = require('broadway');
@@ -30,8 +30,8 @@ app.use(require(__dirname + '/lib/parser.js'), {
 
 app.use(require(__dirname + '/lib/radio.js'), {
     logger: app.getLogger(),
-    Iconv : Iconv,
-    radio : radio,
+    Iconv: Iconv,
+    radio: radio,
     parser: app.getParser()
 });
 
