@@ -8,7 +8,8 @@
     "broadway": "~0.2.9",
     "engine.io": "~0.9.0",
     "request": "~2.33.0",
-    "bunyan": "~0.22.1"
+    "bunyan": "~0.22.1",
+    "socket.io": "~1.0.6"
   },
   "devDependencies": {},
   "scripts": {

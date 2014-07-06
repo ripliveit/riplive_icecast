@@ -1,11 +1,11 @@
+var broadway = require('broadway');
 var http = require('http');
-var Iconv = require('iconv').Iconv;
+var request = require('request');
 var engine = require('engine.io');
 var radio = require('radio-stream');
-var broadway = require('broadway');
-var request = require('request');
 var querystring = require('querystring');
 var bunyan = require('bunyan');
+var socketIo = require('socket.io');
 
 var app = new broadway.App();
 
@@ -19,7 +19,8 @@ app.use(require(__dirname + '/lib/logger.js'), {
 app.use(require(__dirname + '/lib/server.js'), {
     logger: app.getLogger(),
     http: http,
-    engine: engine
+    engine: engine,
+    socketIo : socketIo
 });
 
 app.use(require(__dirname + '/lib/parser.js'), {
@@ -30,7 +31,6 @@ app.use(require(__dirname + '/lib/parser.js'), {
 
 app.use(require(__dirname + '/lib/radio.js'), {
     logger: app.getLogger(),
-    Iconv: Iconv,
     radio: radio,
     parser: app.getParser()
 });
@@ -51,3 +51,4 @@ app.on('error', function(err) {
  * Start the real time server.
  */
 app.serve(8082, app.handle);
+app.readStream();
