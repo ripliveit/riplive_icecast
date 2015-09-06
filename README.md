@@ -1,5 +1,7 @@
 ## Riplive.it Icecast Api
-> A real time NodeJS server.  
+> A real time NodeJS server.
+
+[![Build Status](https://travis-ci.org/ripliveit/riplive_icecast.svg?branch=master)](https://travis-ci.org/ripliveit/riplive_icecast)
 
 An application that parse a HTTP Icecast medata, and broadcast the current onair song to all connected clients. 
 
