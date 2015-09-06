@@ -1,6 +1,6 @@
 {
   "name": "riplive_icecast",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Retrieve current song from a shoutcast server, broadcasting with engine.io to all connected client.",
   "main": "app.js",
   "dependencies": {
@@ -25,5 +25,4 @@
     "real time"
   ],
   "author": "Gabriele D'Arrigo - @acirdesign",
-  "license": "ISC"
 }
