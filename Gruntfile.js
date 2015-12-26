@@ -13,7 +13,7 @@ module.exports = function(grunt) {
                 command: [
                     'cd /var/www/riplive_icecast',
                     'git pull origin master',
-                    'npm install',
+                    'npm install --dev',
                     'NODE_ENV=production forever restart app.js',
                     'forever list'
                 ].join(' && '),
