@@ -50,5 +50,5 @@ app.on('error', function(err) {
 /**
  * Start the real time server.
  */
-app.serve(8082, app.handle);
+app.serve(3001, app.handle);
 app.readStream();
